@@ -1,0 +1,165 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 132, 255);
+    padding: 10px 20px;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search {
+    padding: 8px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.search:focus {
+    outline: none;
+    border: 2px solid yellow;
+    background-color: lightyellow;
+}
+.download {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.download:hover {
+    background-color: white;
+    color: purple;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 50px 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand h2 {
+    color: violet;
+    margin-bottom: 5px;
+}
+
+.footer-brand p {
+    color: lightgray;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: violet;
+    transform: translateY(-3px);
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    color: lightgray;
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: white;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: purple;
+    padding-left: 20px;
+}
+.content {
+    flex: 1;
+    padding: 30px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+    width: calc((100% - 40px) / 3);
+    box-sizing: border-box;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px gray;
+}
+.card h2 {
+    color: purple;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        background-color: lightgray;
+        width: 100%;
+    }
+    .card {
+        background-color: lightgray;
+        width: 100%;
+    }
+}
