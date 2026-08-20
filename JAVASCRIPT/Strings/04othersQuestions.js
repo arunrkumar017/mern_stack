@@ -142,9 +142,9 @@ let result1 = "";
 
 for (let char of str7) {
     if (char === char.toUpperCase()) {
-        result = result + char.toLowerCase();
+        result1 = result1 + char.toLowerCase();
     } else {
-        result = result + char.toUpperCase();
+        result1 = result1 + char.toUpperCase();
     }
 }
 console.log(result1);
